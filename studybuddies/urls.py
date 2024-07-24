@@ -20,7 +20,7 @@ from studyexamtips import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.sb_blog, name = 'sb_blog')
+    path('blog', views.sb_blog, name = 'sb_blog')
 ]
 
 
