@@ -9,7 +9,7 @@ assignees: ''
 
 As a **role** I can **task/capability** so that **received benefit**
 
-####Acceptance Criteria
+#### Acceptance Criteria
 - AC1
 - AC2
 - AC3
