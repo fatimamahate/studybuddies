@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from studyexamtips import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog', views.sb_blog, name = 'sb_blog')
+    path('blog/', views.sb_blog, name = 'sb_blog')
 ]
 
 
