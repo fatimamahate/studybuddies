@@ -20,4 +20,13 @@ class Post(models.Model):
     approved = models.BooleanField(default=False)
     likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
 
+class Comment(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comment")
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comment_author")
+    nickname = models.CharField(max_length=30)
+    body = models.TextField()
+    comment_created_on = models.DateTimeField(auto_now_add=True)
+    comment_updated_on = models.DateTimeField(auto_now=True)
+    approved = models.BooleanField(default=False)
+
 
