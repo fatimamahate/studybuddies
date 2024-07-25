@@ -19,6 +19,14 @@ class Post(models.Model):
     difficulty = models.IntegerField(choices=DIFFICULTY_LEVELS, default=0)
     approved = models.BooleanField(default=False)
     likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
+    favourites = models.ManyToManyField(User, related_name='user_favourites', blank = True)
+    category = models.CharField(choices=CATEGORY, default=0)
+
+    class Meta:
+        ordering = ["-post_created_on"]
+    
+    def __str__(self):
+        return f"{self.title} by {self.author}"
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comment")
@@ -28,5 +36,11 @@ class Comment(models.Model):
     comment_created_on = models.DateTimeField(auto_now_add=True)
     comment_updated_on = models.DateTimeField(auto_now=True)
     approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["-comment_created_on"]
+    
+    def __str__(self):
+        return f"{self.author} commented on {self.post}"
 
 
