@@ -18,5 +18,6 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     difficulty = models.IntegerField(choices=DIFFICULTY_LEVELS, default=0)
     approved = models.BooleanField(default=False)
+    likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
 
 
