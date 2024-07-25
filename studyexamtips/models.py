@@ -12,6 +12,7 @@ class Post(models.Model):
     slug = models.SlugField(max_length=250, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="studyexam_posts")
     main_body = models.TextField()
+    preview = models.TextField(blank=True)
     post_created_on = models.DateTimeField(auto_now_add=True)
     post_updated_on = models.DateTimeField(auto_now=True)
     status = models.IntegerField(choices=STATUS, default=0)
