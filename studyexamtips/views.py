@@ -12,3 +12,5 @@ from .models import Post
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("post_created_on")
     # template_name = "post_list.html"
+    template_name = "studyexamtips/index.html"
+    paginate_by = 6
