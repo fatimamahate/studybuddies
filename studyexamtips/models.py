@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, "Draft"), (1, "Published"))
 DIFFICULTY_LEVELS = ((0, "All Levels"),(1, "Beginner"), (2, "Intermediate"), (3, "Advanced"))
-CATEGORY = ((0, "No Category"), (1, "Study Tips"), (2, "Exam Tips"))
+CATEGORY = ((0, "Uncategorised"), (1, "Study"), (2, "Exam"))
 
 class Post(models.Model):
     title = models.CharField(max_length=250, unique=True)
@@ -20,7 +20,7 @@ class Post(models.Model):
     approved = models.BooleanField(default=False)
     likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
     favourites = models.ManyToManyField(User, related_name='user_favourites', blank = True)
-    category = models.CharField(choices=CATEGORY, default=0)
+    category = models.IntegerField(choices=CATEGORY, default=0)
 
     class Meta:
         ordering = ["-post_created_on"]

@@ -23,6 +23,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('blog/', views.sb_blog, name = 'sb_blog'),
+    path('summernote/', include('django_summernote.urls')),
     path("", include("studyexamtips.urls"), name="sb-urls"),
 ]
 
