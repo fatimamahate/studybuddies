@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: white;
+}  
+
+.brand {
+    font-family: Montserrat, sans-serif;
+}
+
+.brand:hover{
+    color: black;
+}
+
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4A4A4F;
+}
+
+.navbar,
+.footer{
+    background-color: rgb(196, 215, 228);
+}
+.navbar-brand {
+    font-family: 'Monstserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #4A4A4F;
+    text-decoration: none;
+}
+
+.navbar-nav{
+    font-family: 'Monstserrat', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #4A4A4F;
+    text-decoration: none;
+}
+/* .thin {
+    font-weight: 300;
+} */
+
+/* .light-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #445261;
+}
+
+.main-bg {
+    background-color: #F9FAFC;
+} */
+
+.row{
+    margin: 0 auto;
+}
+.card {
+    border: none;
+    background-color:rgb(196, 215, 228);
+}
+/* .card:hover{
+    background-color: white;
+} */
+
+
+.card-title{
+    text-align: center;
+    color:#4A4A4F
+}
+/* .card-title:hover{
+    color:black;
+} */
+
+.card-text,
+.author{
+    text-align: center;
+    color: #4A4A4F
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    /* background-color: ; */
+}
+
+
+
+.scale {
+    width: 100%;
+    height: auto;
+}
+
+.author {
+    color: white;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #445261;
+    color: black;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #445261;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+.post-link,
+.page-link {
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.post-link:hover,
+.page-link:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+.post-title {
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #4A4A4F;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+
+.btn-signup,
+.btn-edit {
+    background-color: #188181;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #23BBBB;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
+
+.btn-like {
+    color: #E84610;
+    border: none;
+    background: transparent;
+}
+
+.btn-delete {
+    color: #fff;
+    background: #E84610;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #E84610;
+    background: transparent;
+    border: none;
+}
+
+.faded {
+    color: rgb(172, 175, 175);
+}
+
+.approval {
+    color: rgb(222, 146, 168);
+}
+
