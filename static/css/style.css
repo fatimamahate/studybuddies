@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-body {
+/* body {
     /* background-color: #F9FAFC; */
-    background-color: pink;
-}
+    /* background-color: pink;
+} */ 
 
 .brand {
     font-size: 200px;
@@ -18,9 +18,9 @@ h2 {
     color: #4A4A4F;
 }
 
-.thin {
+/* .thin {
     font-weight: 300;
-}
+} */
 
 /* .light-bg {
     background-color: #fff;
