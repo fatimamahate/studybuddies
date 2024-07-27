@@ -20,7 +20,8 @@ h2 {
     color: #4A4A4F;
 }
 
-.navbar{
+.navbar,
+.footer{
     background-color: rgb(196, 215, 228);
 }
 .navbar-brand {
@@ -75,8 +76,10 @@ h2 {
     color:black;
 } */
 
-.card-text{
+.card-text,
+.author{
     text-align: center;
+    color: #4A4A4F
 }
 
 .image-container {
@@ -88,7 +91,7 @@ h2 {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: white;
+    /* background-color: ; */
 }
 
 
@@ -138,16 +141,17 @@ h2 {
     z-index: 100;
 }
 
-.post-link {
+.post-link,
+.page-link {
     text-align: center;
     background-color: transparent;
-
     text-decoration: none;
 }
 
 .post-link:hover,
-.page-link{
+.page-link:hover{
     color: black;
+    background-color: white;
     text-decoration: none;
 }
 
@@ -211,3 +215,4 @@ h2 {
 .approval {
     color: rgb(222, 146, 168);
 }
+
