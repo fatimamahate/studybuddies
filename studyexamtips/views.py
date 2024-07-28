@@ -11,16 +11,18 @@ from .models import Post
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("post_created_on")
-    # template_name = "post_list.html"
     template_name = "studyexamtips/index.html"
     paginate_by = 6
 
 class StudyView(generic.ListView):
     """
-    Filters posts so that they are published, approved 
+    Filters posts so that they are published 
     and of the study tips category. 
     Template used is study_post_list.html
     """
+    queryset = Post.objects.filter(status=1, category=1).order_by("post_created_on")
+    template_name="studyexamtips/study_post_list.html"
+    paginate_by = 6
 
 
 
