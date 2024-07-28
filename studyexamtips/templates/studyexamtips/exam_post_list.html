@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- exam_post_list.html content starts here -->
+<div class="container-fluid">
+    <div>
+        <div>
+            <h2 class="headline-intro-text mt-3">Have a look through our Exam Tips here!</h2>
+        </div>
+        <hr>
+    </div>
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-12 mt-3">
+            <div class="row">
+                {% for post in post_list %}
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card mb-4 border-0 shadow p-3 rounded">
+                        <div class="card-body">
+                            <!-- <div class="image-container mt-5">
+                                <div class="image-flash">
+                                    
+                                </div>
+                            </div> -->
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p class="card-text">{{ post.preview }}</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="post-link btn btn-outline-secondary btn-sm btn-light">
+                                <!-- btn-outline-secondary btn-sm -->
+                                Read Article
+                            </a>
+                            <hr />
+                            <p class="card-text text-muted h6 text-center">{{ post.post_created_on}}
+                            </p>
+                            <hr/>
+                            <p class="author text-muted">Written by: {{ post.author }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link text-muted"> &laquo; PREVIOUS </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link text-muted"> NEXT &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
+
+<!-- exam_post_list.html content ends here -->
+{% endblock %}

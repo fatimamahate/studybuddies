@@ -24,6 +24,17 @@ class StudyView(generic.ListView):
     template_name="studyexamtips/study_post_list.html"
     paginate_by = 6
 
+class ExamView(generic.ListView):
+    """
+    Filters posts so that they are published 
+    and of the Exam tips category. 
+    Template used is study_post_list.html
+    """
+    queryset = Post.objects.filter(status=1, category=2).order_by("post_created_on")
+    template_name="studyexamtips/exam_post_list.html"
+    paginate_by = 6
+
+
 
 
 def post_detail(request, slug):

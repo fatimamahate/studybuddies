@@ -48,8 +48,8 @@
                             href="{% url 'study_tips'%}">Study Tips</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
-                            href="#">Exam Tips</a>
+                        <a class="nav-link {% if request.path == exam_posts_url %}active{% endif %}" aria-current="page"
+                            href="{% url 'exam_tips' %}">Exam Tips</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
