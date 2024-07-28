@@ -15,6 +15,15 @@ class PostList(generic.ListView):
     template_name = "studyexamtips/index.html"
     paginate_by = 6
 
+class StudyView(generic.ListView):
+    """
+    Filters posts so that they are published, approved 
+    and of the study tips category. 
+    Template used is study_post_list.html
+    """
+
+
+
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
