@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<!-- about.html content starts here -->
+<div class="container-fluid">
+    <div>
+        <div>
+            <h2 class="headline-intro-text offset-md-2 mt-3">Who We Are</h2>
+        </div>
+        <hr>
+        <div class="col-md-8 mt-3 offset-md-2 card-text">
+            <p class = "about">
+                We are Study Buddies! The best place to get all of your study and exam tips. 
+                There's no need to stress (or we hope to lessen it at least). 
+                If you need any tips on how to revise effectively during the academic year,
+                what you should take in exams or even just some tips on managing stress in 
+                the forever stressful time of year. We've got it and even better, these articles 
+                are written by people who have been through it all.
+                <br>
+                <br>
+                You can visit our study tips page. Below is just sample of what you could find!
+                <ul class = "list-unstyled mt-1 mb-1">
+                    <li>
+                        How to organise your day
+                    </li>
+                    <li>
+                        Types of Note-Taking
+                    </li>
+                    <li>
+                        First-Time Revision Tips
+                    </li>
+                    <li>
+                        and more! Just have a look on the Study Tips page.
+                    </li>
+                </ul> 
+                <br>
+                Or for exams we have the exam tips page. Have a look at a sample of what you could find!
+                <ul class = "list-unstyled mt-1 mb-1">
+                    <li>
+                        What to do on exam day
+                    </li>
+                    <li>
+                        What to take on exam day
+                    </li>
+                    <li>
+                        Stuck on an exam question?
+                    </li>
+                    <li>
+                        and more! Just have a look on the Exam Tips page.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Follow our Tips and tricks all tried and tested by you!
+            </p>
+            <hr>
+            {% for post in post_list %}
+            {% if forloop.counter == 1 %}
+            <h5>
+                Our latest post was posted on {{ post.post_created_on }}
+            </h5>
+            {% endif %}
+            {% endfor %}
+            <hr>
+
+<!-- about.html content ends here -->
+{% endblock %}
