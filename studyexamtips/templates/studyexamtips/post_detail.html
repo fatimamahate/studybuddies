@@ -56,13 +56,13 @@
           {% if not comment.approved and comment.author == user %}
           faded{% elif not comment.approved %} d-none{% endif %}">
           <p class="font-weight-bold">
-            {{ comment.author }}
-            <span class="font-weight-normal">
-              {{ comment.comment_created_on }}
-            </span> wrote:
+            {{ comment.author }} wrote:
           </p>
           <div id="comment{{ comment.id }}">
             {{ comment.body | linebreaks }}
+            <span class="font-weight-normal text-muted">
+                at {{ comment.comment_created_on }}
+            </span>
           </div>
           {% if not comment.approved and comment.author == user %}
           <p class="approval">
