@@ -60,9 +60,16 @@ def post_detail(request, slug):
 
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
+    comment = post.comment.all().order_by("-comment_created_on")
+    comment_count = post.comment.filter(approved=True).count()
 
     return render(
         request,
         "studyexamtips/post_detail.html",
-        {"post": post},
+        {
+            "post": post,
+            "comment": comment,
+            "comment_count": comment_count,
+        }
+        
     )
