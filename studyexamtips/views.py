@@ -9,7 +9,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from django.contrib import messages
 from django.utils.text import slugify
-from .models import Post, Favorite
+from .models import Post
 from .forms import CommentForm, PostForm
 
 
@@ -101,11 +101,20 @@ def post_detail(request, slug):
         
     )
 
-# class FavoritedPostsView(generic.ListView):
-#     model = Favorite
-#     template_name = 'favourite_posts.html'
-#     context_object_name = 'favorited_posts'
+class CreatePost(generic.CreateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'studyexamtips/create_post.html'
+    success_url = '/success'
 
-#     def get_queryset(self):
-#         # Retrieve favorited posts for the logged-in user
-#         return Favorite.objects.filter(user=self.request.user).select_related('post')
+    def form_valid(self, form):
+       
+        form.instance.author = self.request.user
+        form.instance.slug = slugify(form.instance.title)
+        return super().form_valid(form)
+
+def post_submitted(request):
+
+    return render(request, 'studyexamtips/post_submitted.html')
+
+

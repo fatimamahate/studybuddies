@@ -8,7 +8,6 @@ CATEGORY = ((0, "Uncategorised"), (1, "Study"), (2, "Exam"))
 
 class Post(models.Model):
     title = models.CharField(max_length=250, unique=True)
-    subject = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="studyexam_posts")
     main_body = models.TextField()
@@ -43,8 +42,8 @@ class Comment(models.Model):
     def __str__(self):
         return f"{self.author} commented on {self.post}"
 
-# class Favorite(models.Model):
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
-#     post = models.ForeignKey(Post, on_delete=models.CASCADE)
+
+
+
 
 
