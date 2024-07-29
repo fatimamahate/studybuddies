@@ -8,8 +8,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from django.contrib import messages
+from django.utils.text import slugify
 from .models import Post
 from .forms import CommentForm
+
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("post_created_on")
@@ -89,3 +91,15 @@ def post_detail(request, slug):
         }
         
     )
+
+class CreatePostView(generic.CreateView):
+    """
+    This class handles the creation of new reviews. A help method
+    has also been implemented to add author and slug to the Post
+    model.
+    """
+
+    model = Post
+    # form_class = CreateReviewForm
+    template_name = 'create_review.html'
+    # success_url = '/review/submit-success/'
