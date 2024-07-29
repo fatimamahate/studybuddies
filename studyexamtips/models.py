@@ -29,7 +29,7 @@ class Post(models.Model):
         return f"{self.title} by {self.author}"
 
 class Comment(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comment")
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comment_author")
     nickname = models.CharField(max_length=30)
     body = models.TextField()
