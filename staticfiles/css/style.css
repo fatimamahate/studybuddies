@@ -117,10 +117,12 @@ h2 {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: rgb(196, 215, 228);
     color: black;
     position: relative;
 }
+
+
 
 .masthead-image {
     position: relative;
@@ -163,7 +165,7 @@ h2 {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: black;
 }
 
 
