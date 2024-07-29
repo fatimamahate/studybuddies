@@ -1,0 +1,27 @@
+<!-- {% extends 'base.html' %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+{% if user.is_authenticated %}
+
+<div class="container">
+    <div>
+        <h1 class="headline mt-4">Create Post</h1>
+        <div>
+            <h2 class="headline-intro-text">Use this form to create your review.</h2>
+        </div>
+        <hr>
+    </div>
+    <form id="postForm" method="post" style="margin-top: 1.3em;">
+        {{  | crispy }}
+        {% csrf_token %}
+        <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
+    </form>
+    {% else %}
+    <p class="access-denied card-text">You are not allowed here!</p>
+    {% endif %}
+</div>
+
+{% endblock content %} -->

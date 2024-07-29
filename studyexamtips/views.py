@@ -9,8 +9,8 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from django.contrib import messages
 from django.utils.text import slugify
-from .models import Post
-from .forms import CommentForm
+from .models import Post, Favorite
+from .forms import CommentForm, PostForm
 
 
 class PostList(generic.ListView):
@@ -47,6 +47,15 @@ class AboutView(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-post_created_on")
     template_name="studyexamtips/about.html"
 
+# class FavouriteView(generic.ListView):
+#     """
+#     Filters posts so that they are published 
+#     and the current user has favourited it.
+#     Template used is study_post_list.html
+#     """
+#     queryset = Post.objects.filter(status=1).order_by("post_created_on")
+#     template_name="studyexamtips/my_favourites.html"
+#     paginate_by = 6
 
 def post_detail(request, slug):
     """
@@ -87,19 +96,16 @@ def post_detail(request, slug):
             "post": post,
             "comments": comments,
             "comment_count": comment_count,
-            "comment_form": comment_form
+            "comment_form": comment_form,
         }
         
     )
 
-class CreatePostView(generic.CreateView):
-    """
-    This class handles the creation of new reviews. A help method
-    has also been implemented to add author and slug to the Post
-    model.
-    """
+# class FavoritedPostsView(generic.ListView):
+#     model = Favorite
+#     template_name = 'favourite_posts.html'
+#     context_object_name = 'favorited_posts'
 
-    model = Post
-    # form_class = CreateReviewForm
-    template_name = 'create_review.html'
-    # success_url = '/review/submit-success/'
+#     def get_queryset(self):
+#         # Retrieve favorited posts for the logged-in user
+#         return Favorite.objects.filter(user=self.request.user).select_related('post')

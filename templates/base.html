@@ -3,6 +3,9 @@
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
+{% url 'favorited_posts' as favorite_url %}
+
+
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -67,7 +70,7 @@
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Create</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">My Favourites</a>
+                        <a class="nav-link {% if request.path == favorite_url %}active{% endif %}" aria-current="page" href="{% url 'favorited_posts' %}">My Favourites</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Sign Out</a>

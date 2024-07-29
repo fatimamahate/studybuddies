@@ -19,7 +19,7 @@ class Post(models.Model):
     difficulty = models.IntegerField(choices=DIFFICULTY_LEVELS, default=0)
     approved = models.BooleanField(default=False)
     likes = models.ManyToManyField(User, related_name='post_likes', blank=True)
-    favourites = models.ManyToManyField(User, related_name='user_favourites', blank = True)
+    # favourites = models.ManyToManyField(User, related_name='user_favourites', blank = True)
     category = models.IntegerField(choices=CATEGORY, default=0)
 
     class Meta:
@@ -42,5 +42,9 @@ class Comment(models.Model):
     
     def __str__(self):
         return f"{self.author} commented on {self.post}"
+
+# class Favorite(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     post = models.ForeignKey(Post, on_delete=models.CASCADE)
 
 
