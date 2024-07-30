@@ -16,10 +16,20 @@
                 <p class="post-subtitle text-muted">Written by: {{ post.author }}</p>
                 <!-- <hr> -->
                 <p class="post-subtitle text-muted">On: {{ post.post_created_on }}</p>
+                <!-- <br>
+                <p class="post-subtitle text-muted">{{ post.difficulty }}</p> -->
+                {% if user.is_authenticated and post.author == user %} 
+                {% csrf_token %}
+                <div class="mt-4 text-center">
+                  <a href=" {% url 'edit' post.slug %}" class="btn btn-danger" >Update</a>
+                  <!-- btn-outline-secondary btn-sm -->
+                </div>
+                {% endif %} 
             </div>
-        </div>   
+        </div> 
     </div>
 </div>
+
 
 <div class="container">
     <div class="row">

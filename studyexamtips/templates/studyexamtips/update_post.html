@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+{% if user.is_authenticated %}
+
+<div class="container">
+    <div>
+        <h1 class="headline mt-4">Update Post</h1>
+        <div>
+            <h2 class="headline-intro-text">Please ensure your post follows the HELLO rule. 
+            </h2>
+            <br>
+            <p>
+                <ul>
+                    <li><b>H</b> - Helpful - if it's not helpful, why are you posting?</li>
+                    <li>
+                        <b>E</b> - English - the most common language and we aim to reach everyone.
+                    </li>
+                    <li>
+                        <b>L</b> - Less is more - no need for extra looooooong texts. Sometimes short 
+                        and concise is all you need.
+                    </li>
+                    <li>
+                        <b>L</b> - Lovely- please don't be rude, prejudiced, write swears/profanity 
+                        or promote illegal behaviour. In other words just be <b>lovely!</b>
+                    </li>
+                    <li>
+                        <b>O</b> - Only study/exam tips. We don't need a how to guide on mowing the lawn, 
+                        we do however love to hear what gets you through a day of revision or nerves 
+                        on exam day. 
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <hr>
+    </div>
+    <form id="postForm" method="post" style="margin-top: 1.3em;">
+        {{ form | crispy }}
+        {% csrf_token %}
+        <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Update Post</button>
+    </form>
+    {% else %}
+    <p class="access-denied card-text bg-danger">You are not allowed here!</p>
+    {% endif %}
+</div>
+
+{% endblock content %}

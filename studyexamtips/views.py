@@ -15,7 +15,7 @@ from .forms import CommentForm, PostForm
 
 
 class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by("post_created_on")
+    queryset = Post.objects.filter(status=1).order_by("-post_created_on")
     template_name = "studyexamtips/index.html"
     paginate_by = 6
 
@@ -25,7 +25,7 @@ class StudyView(generic.ListView):
     and of the study tips category. 
     Template used is study_post_list.html
     """
-    queryset = Post.objects.filter(status=1, category=1).order_by("post_created_on")
+    queryset = Post.objects.filter(status=1, category=1).order_by("-post_created_on")
     template_name="studyexamtips/study_post_list.html"
     paginate_by = 6
 
@@ -35,7 +35,7 @@ class ExamView(generic.ListView):
     and of the Exam tips category. 
     Template used is study_post_list.html
     """
-    queryset = Post.objects.filter(status=1, category=2).order_by("post_created_on")
+    queryset = Post.objects.filter(status=1, category=2).order_by("-post_created_on")
     template_name="studyexamtips/exam_post_list.html"
     paginate_by = 6
 
@@ -48,15 +48,13 @@ class AboutView(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-post_created_on")
     template_name="studyexamtips/about.html"
 
-# class FavouriteView(generic.ListView):
-#     """
-#     Filters posts so that they are published 
-#     and the current user has favourited it.
-#     Template used is study_post_list.html
-#     """
-#     queryset = Post.objects.filter(status=1).order_by("post_created_on")
-#     template_name="studyexamtips/my_favourites.html"
-#     paginate_by = 6
+# class MyPostsView(generic.ListView):
+#     queryset = Post.objects.filter()
+#     template = "studyexamtips/user_posts.html"
+#     def get_queryset(self):
+
+#         return Post.objects.filter(author=self.request.user.id).order_by(
+#                                    '-post_created_on')
 
 def post_detail(request, slug):
     """
@@ -156,5 +154,22 @@ class CreatePost(generic.CreateView):
 def post_submitted(request):
 
     return render(request, 'studyexamtips/post_submitted.html')
+
+class UpdatePost(generic.UpdateView):
+    model = Post
+    form_class = PostForm
+    template_name = 'studyexamtips/update_post.html'
+    success_url = '/update-success'
+
+    def form_valid(self, form):
+       
+        form.instance.author = self.request.user
+        form.instance.slug = slugify(form.instance.title)
+
+        return super().form_valid(form)
+
+def post_updated(request):
+
+    return render(request, 'studyexamtips/post_updated.html')
 
 
