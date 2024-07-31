@@ -19,11 +19,15 @@
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="card mb-4 border-0 shadow p-3 rounded">
                         <div class="card-body">
-                            <!-- <div class="image-container mt-5">
-                                <div class="image-flash">
-                                    
-                                </div>
-                            </div> -->
+                            <div class="image-container mt-5">
+                                {% if "placeholder" in post.featured_image.url %}
+                                <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                  alt="placeholder image">
+                                {% else %}
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}"
+                                  alt="{{ post.title }}">
+                                {% endif %}
+                            </div>
                             <h2 class="card-title">{{ post.title }}</h2>
                             <p class="card-text">{{ post.preview }}</p>
                             {% if user.is_authenticated and post.status == 1 and post.author == user %} 
