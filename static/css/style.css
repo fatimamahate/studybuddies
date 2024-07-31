@@ -112,7 +112,7 @@ h2 {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 100%;
     width: 100%;
 }
 
