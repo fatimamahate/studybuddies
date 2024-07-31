@@ -15,7 +15,7 @@ from .forms import CommentForm, PostForm
 
 
 class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by("-post_created_on")
+    queryset = Post.objects.filter(status=1).order_by("-status", "-post_updated_on")
     template_name = "studyexamtips/index.html"
     paginate_by = 6
 
@@ -48,13 +48,13 @@ class AboutView(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-post_created_on")
     template_name="studyexamtips/about.html"
 
-# class MyPostsView(generic.ListView):
-#     queryset = Post.objects.filter()
-#     template = "studyexamtips/user_posts.html"
-#     def get_queryset(self):
+class MyPostsView(generic.ListView):
+    template_name = "studyexamtips/my_posts_list.html"
+    paginate_by = 6
+    def get_queryset(self):
 
-#         return Post.objects.filter(author=self.request.user.id).order_by(
-#                                    '-post_created_on')
+        return Post.objects.filter(author=self.request.user.id).order_by(
+                                   '-post_created_on')
 
 def post_detail(request, slug):
     """

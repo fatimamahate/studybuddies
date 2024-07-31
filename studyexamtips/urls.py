@@ -5,6 +5,7 @@ urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('study-tips/', views.StudyView.as_view(), name='study_tips'),
     path('exam-tips/', views.ExamView.as_view(), name='exam_tips'),
+    path('my-posts/', views.MyPostsView.as_view(), name='my_posts'),
     path('create/',views.CreatePost.as_view(),name='create'),
     path('success/', views.post_submitted, name='post_submit_success'),
     path('<slug:slug>/edit/',views.UpdatePost.as_view(),name='edit'),
