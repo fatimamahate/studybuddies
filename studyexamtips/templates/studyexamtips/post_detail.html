@@ -21,7 +21,8 @@
                 {% if user.is_authenticated and post.author == user %} 
                 {% csrf_token %}
                 <div class="mt-4 text-center">
-                  <a href=" {% url 'edit' post.slug %}" class="btn btn-danger" >Update</a>
+                  <a href=" {% url 'edit' post.slug %}" class="btn btn-info" >Update</a>
+                  <a href=" {% url 'delete' post.slug %}" class="btn btn-danger" >Delete</a>
                   <!-- btn-outline-secondary btn-sm -->
                 </div>
                 {% endif %} 

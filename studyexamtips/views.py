@@ -172,4 +172,14 @@ def post_updated(request):
 
     return render(request, 'studyexamtips/post_updated.html')
 
+class DeletePost(generic.DeleteView):
+
+    model = Post
+    template_name = 'studyexamtips/delete_post.html'
+    success_url = '/delete-success'
+
+def post_deleted(request):
+
+    return render(request, 'studyexamtips/post_deleted.html')
+
 
