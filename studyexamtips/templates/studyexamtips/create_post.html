@@ -37,7 +37,7 @@
         </div>
         <hr>
     </div>
-    <form id="postForm" method="post" style="margin-top: 1.3em;">
+    <form id="postForm" enctype="multipart/form-data" method="post" style="margin-top: 1.3em;">
         {{ form | crispy }}
         {% csrf_token %}
         <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit Post</button>
