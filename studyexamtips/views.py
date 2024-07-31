@@ -55,7 +55,7 @@ class MyPostsView(generic.ListView):
 
         return Post.objects.filter(author=self.request.user.id).order_by(
                                    '-post_created_on')
-
+# try adding this to a class based listview
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -182,16 +182,16 @@ def post_deleted(request):
 
     return render(request, 'studyexamtips/post_deleted.html')
 
-class LikeView(generic.DetailView):
 
-    def like_post(self, request, slug):
+# start here
+def like_post(self, request, slug):
 
-        post = get_object_or_404(Post, slug=slug)
-        if post.likes.filter(id=request.user.id).exists():
-            post.likes.remove(request.user)
-        else:
-            post.likes.add(request.user)
-        
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    post = get_object_or_404(Post, slug=slug)
+    if post.likes.filter(id=request.user.id).exists():
+        post.likes.remove(request.user)
+    else:
+        post.likes.add(request.user)
+    
+    return HttpResponseRedirect(reverse('studyexamtips/post_detail.html', args=[slug]))
 
 

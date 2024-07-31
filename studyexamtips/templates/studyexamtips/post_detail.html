@@ -29,7 +29,20 @@
                   <a href=" {% url 'delete' post.slug %}" class="btn btn-danger" >Delete</a>
                   <!-- btn-outline-secondary btn-sm -->
                 </div>
+                {% endif %}
+                {% if user.is_authenticated %}
+                <div class = 'like-btn text-center'>
+                  <form>
+                    {% if liked %}
+                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">Like</button>
+                    {% else %}
+                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">Dislike</button>
+                    {% endif %}
+                  </form>
+                </div>
                 {% endif %} 
+                
+                
             </div>
         </div> 
     </div>
@@ -53,13 +66,8 @@
     <div class="col-12">
       <strong class="text-secondary">
         <i class="far fa-comments"></i> {{ comment_count }}
-        <i class="far fa-heart p-2"></i> {{ post.number_of_likes }}
+        <i class="far fa-heart p-2"></i> {{ post.like_total }}
       </strong>
-      <!-- <div class="review-detail-heart-comments mt-2">
-        <strong class="text-secondary">
-          
-        </strong>
-      </div> -->
     </div>
     <div class="col-12">
       <hr>

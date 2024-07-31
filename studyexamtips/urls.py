@@ -12,7 +12,8 @@ urlpatterns = [
     path('update-success/', views.post_updated, name='post_update_success'),
     path('<slug:slug>/delete/',views.DeletePost.as_view(),name='delete'),
     path('delete-success/',views.post_deleted, name='post_delete_success'),
-    path('like/<slug:slug>', views.LikeView.as_view(),name='like_post'),
+#     here
+    path('like/<slug:slug>',views.like_post, name = 'like_post'),
     path('who-we-are/', views.AboutView.as_view(), name='about'),
     path('<slug:slug>/', views.post_detail, name='post_detail'),
     path('<slug:slug>/edit_comment/<int:comment_id>',
