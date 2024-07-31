@@ -182,4 +182,17 @@ def post_deleted(request):
 
     return render(request, 'studyexamtips/post_deleted.html')
 
+class LikeView(generic.DetailView):
+
+    def like_post(self, request, slug):
+
+        post = get_object_or_404(Post, slug=slug)
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+        
+        likes
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
