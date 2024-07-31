@@ -192,7 +192,6 @@ class LikeView(generic.DetailView):
         else:
             post.likes.add(request.user)
         
-        likes
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
