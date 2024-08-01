@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 card-text">
+            <div>
+                <p class="card-text">Looks like we don't have this...
+                    <br>404 Page Not Found
+                </p>
+                <a href="{% url 'home'%}">Back to home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
