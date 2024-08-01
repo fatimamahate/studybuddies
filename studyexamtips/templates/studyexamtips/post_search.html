@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- post_search.html content starts here -->
+<div class="container-fluid">
+    <div>
+        <div>
+            <h2 class="headline-intro-text mt-3">Search here</h2>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <form action="{% url 'search_post' %}" method="POST">
+            {% csrf_token %} 
+            <input type="text" name="title">
+            <input type="submit" name="submit" value="Search">
+        </form>
+    </div>
+    {% for result in results %}
+
+     <p><a href = "{% url 'post_detail' result.slug %}">{{result.title}}</a> by {{result.author}}</p> 
+
+    {% endfor %}
+</div>
+
+<!-- post_search.html content ends here -->
+{% endblock %}
+

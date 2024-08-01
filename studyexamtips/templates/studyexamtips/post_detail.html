@@ -25,19 +25,6 @@
                   <a href=" {% url 'delete' post.slug %}" class="btn btn-danger" >Delete</a>
                 </div>
                 {% endif %}
-                {% if user.is_authenticated %}
-                <div class = 'like-btn text-center'>
-                  <form>
-                    {% if liked %}
-                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">Like</button>
-                    {% else %}
-                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like">Dislike</button>
-                    {% endif %}
-                  </form>
-                </div>
-                {% endif %} 
-                
-                
             </div>
         </div> 
     </div>

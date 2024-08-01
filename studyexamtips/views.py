@@ -183,6 +183,24 @@ def post_deleted(request):
     return render(request, 'studyexamtips/post_deleted.html')
 
 
+def search_post(request):
+    """ search function  """
+    if request.method == "POST":
+        query_name = request.POST.get('title', None)
+        if query_name:
+            results = Post.objects.filter(title__contains=query_name)
+            return render(request, 'studyexamtips/post_search.html', {"results":results})
 
+    return render(request, 'studyexamtips/post_search.html')
+
+# def search_post(request):
+#     if request.method == 'POST':
+#         # Retrieve the search query entered by the user
+#         search_query = request.POST['search_query']
+#         # Filter your model by the search query
+#         posts = Post.objects.filter(title__contains=search_query)
+#         return render(request, 'studyexamtips/post_search.html', {'query':search_query, 'posts':posts})
+#     else:
+#         return render(request, 'studyexamtips/post_search.html',{})
 
 

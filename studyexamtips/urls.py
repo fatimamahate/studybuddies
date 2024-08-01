@@ -13,6 +13,7 @@ urlpatterns = [
     path('<slug:slug>/delete/',views.DeletePost.as_view(),name='delete'),
     path('delete-success/',views.post_deleted, name='post_delete_success'),
 #     here
+    path('search/', views.search_post, name='search_post'),
     path('who-we-are/', views.AboutView.as_view(), name='about'),
     path('<slug:slug>/', views.post_detail, name='post_detail'),
     path('<slug:slug>/edit_comment/<int:comment_id>',

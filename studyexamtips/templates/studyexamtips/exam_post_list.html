@@ -20,7 +20,7 @@
                     <div class="card mb-4 border-0 shadow p-3 rounded">
                         <div class="card-body">
                             <div class="image-container mt-5">
-                                {% if "featured_image" in post.featured_image.url %}
+                                {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
                                   alt="placeholder image">
                                 {% else %}
