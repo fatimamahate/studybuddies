@@ -1,3 +1,28 @@
+# Study Buddies 
+Welcome to the Study Buddies Project. 
+
+Study Buddies is a website dedicated to sharing study and exam tips to all who need it. Exam season can be stressful and knowing where to begin studying can be intimidating, therefore this site lets people (who've been through it all) to share any tips and tricks they want to. A source of inspiration for this site was Wikipedia. On Wikipedia people can share anything they'd like (as long as it follows the rules) regarding any topic. Whilst Wikipedia encompasses all topics related to absolutely anything in the world, Study Buddies focus on specifically studying, whether it's studying just for revision or studying for the all dreaded exam. Similar to Wikipedia, logged in users can share their own posts which ensures we have the latest tips and tricks and we can be sure they work! Even more importantly, it's crucial to be aware that everybody has different ways of working and studying. Because Study Buddies consists of posts written by users, we can be sure there is a plethora of information suitable for every need. 
+
+You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.herokuapp.com/)
+
+# Contents
+* [**Project**](<#project>)
+    * [Site Users Goal](<#site-users-goal>)
+    * [Site Owners Goal](<#site-owners-goal>)
+    * [Agile](<#agile>)
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome fatimamahate,
