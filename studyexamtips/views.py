@@ -203,8 +203,8 @@ def search_post(request):
 #     else:
 #         return render(request, 'studyexamtips/post_search.html',{})
 
-def my_404(request, exception):
-    context = {}
-    return render(request, 'studyexamtips/404.html',context)
+# def my_404(request, exception):
+#     context = {}
+#     return render(request, 'studyexamtips/404.html',context)
 
 

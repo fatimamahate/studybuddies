@@ -30,5 +30,5 @@ urlpatterns = [
 ]
 
 
-handler404 = 'studyexamtips.views.my_404'
+# handler404 = 'studyexamtips.views.my_404'
 
