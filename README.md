@@ -10,6 +10,17 @@ You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.hero
     * [Users Goal](<#users-goal>)
     * [Owners Goal](<#owners-goal>)
     * [Agile](<#agile>)
+* [**User Experience**](<#user-experience>)
+    * [Wireframes](<#wireframes>)
+    * [User Stories](<#user-stories>)
+* [**Features**](<#features>)
+    * [Header](<#header>)
+    * [Navigation](<#navigation>)
+    * [Pages](<#pages>)
+    * [Footer](<#footer>)
+    * [More Features](<#more_features>)
+* [**Technologies Used**](<#technologies_used>)
+
 
 # **Project**
 ## Users Goal
@@ -20,9 +31,92 @@ The owner would like the community to be able to share tips and tricks to reader
 
 ## Project
 ### Agile
-A Github board (project) was used for the agile aspect of this project
+A Github board (project) was used for the agile aspect of this project to manage my user stories. 
 
 ### Database
+The models created for this project are called:
+1. Post - which is the database related to the each blog post. 
+2. Comment - which is the database related to the comments on each blog post. 
+
+The following Entity Relationship Diagrams (END) were created for this project. 
+
+# **User Experience**
+## Wireframes
+The following wireframes were created to design the layout of the pages. It was created using Microsoft Paint.
+
+## User Stories
+The User Stories can be split into two perspectives. 
+1. Site User 
+2. Site Admin
+
+The following User Stories were used:
+1. Site User Stories
+  -
+2. Site Admin Stories
+  -
+# **Features**
+## Header
+The header of the page includes the name of the site which is Study Buddies. The sites name is linked to the homepage so that when users would like to go back, they simply need to click on the site name. Furthermore, the colour chosen is #4A4A4F which is dark grey. This is because it is softer than the harsh black against the background which is rgb(196, 215, 228).
+
+## Navigation
+The navigation (nav bar) has the following pages. 
+1. Home
+2. Study Tips
+3. Exam Tips
+4. Who We Are
+5. Search
+6. Sign Up
+7. Sign In
+
+If the User is logged in, then in addtion to the pages 1-5 from above, we have the following pages.
+1. My Posts
+2. Create
+3. Sign Out
+
+## Pages
+Each navigation takes you to the following pages:
+1. Home
+2. Study Tips
+3. Exam Tips
+4. Who We Are
+5. Search
+6. Sign Up
+7. Sign In
+8. My Posts
+9. Create
+10. Sign Out
+
+## Footer 
+The footer has the icons which take you to the relevant social media pages. 
+
+## More Features
+Further to the features above, there are some features which would be beneficial to implement. These are listed below:
+
+1. Search bar in nav bar instead of in a new page
+  - Search to also reveal a cards of pages instead of a list of pages.
+2. Automated Testing
+3. Approval for edited post
+  - Currently, as the admin has rights of approving they have already seen and trusted the user, therefore are trusted to edit their page correctly. It would be better and more efficient if the post will be sent for approval.
+
+# **Technologies Used** 
+The following technologies - including programming languages, frameworks and sites for testing - are as follows:
+
+- Python
+- HTML
+- CSS
+- JavaScript
+- Django
+- Bootstrap5
+- Microsoft Paint
+- Cloudinary
+- HTML Validator https://validator.w3.org/
+- 
+
+
+
+
+
+
 
 
 
