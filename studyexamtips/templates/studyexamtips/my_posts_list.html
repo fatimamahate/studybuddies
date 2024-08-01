@@ -35,7 +35,6 @@
                             <div class="text-center">
                               <a href=" {% url 'edit' post.slug %}" class="btn btn-info" >Update Published Post</a>
                               <a href=" {% url 'delete' post.slug %}" class="btn btn-danger" >Delete Published Post</a>
-                              <!-- btn-outline-secondary btn-sm -->
                             </div>
                             {% elif user.is_authenticated and post.status == 0 and post.author == user %}
                             <div class="text-center">

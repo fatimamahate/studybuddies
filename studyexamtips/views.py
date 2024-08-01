@@ -1,10 +1,3 @@
-# from django.shortcuts import render
-# from django.http import HttpResponse
-
-# Create your views here.
-# def sb_blog(request):
-#     return HttpResponse("Hello World!")
-
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
@@ -55,7 +48,7 @@ class MyPostsView(generic.ListView):
 
         return Post.objects.filter(author=self.request.user.id).order_by(
                                    '-post_created_on')
-# try adding this to a class based listview
+
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -193,8 +186,5 @@ def search_post(request):
 
     return render(request, 'studyexamtips/post_search.html')
 
-
-# def my_404(request, exception):
-#     return render(request, 'studyexamtips/404.html')
 
 

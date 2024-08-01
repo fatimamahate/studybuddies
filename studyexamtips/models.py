@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-# Create your models here.
 
 STATUS = ((0, "Draft"), (1, "Published"))
 DIFFICULTY_LEVELS = ((0, "All Levels"),(1, "Beginner"), (2, "Intermediate"), (3, "Advanced"))
@@ -27,9 +26,6 @@ class Post(models.Model):
     def __str__(self):
         return f"{self.title} by {self.author}."
     
-
-
-
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="comment_author")
