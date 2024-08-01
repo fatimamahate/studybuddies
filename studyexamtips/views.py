@@ -6,6 +6,7 @@ from django.utils.text import slugify
 from .models import Post, Comment
 from .forms import CommentForm, PostForm
 
+# This page contains all of the class based and function based views
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter( status=1, approved=True ).order_by("-post_updated_on")

@@ -2,6 +2,13 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+'''
+Models:
+The models are 
+* Post - is related to each blog post
+* Comment - is related to comments in post
+'''
+# This is for the 
 STATUS = ((0, "Draft"), (1, "Published"))
 DIFFICULTY_LEVELS = ((0, "All Levels"),(1, "Beginner"), (2, "Intermediate"), (3, "Advanced"))
 CATEGORY = ((0, "Uncategorised"), (1, "Study"), (2, "Exam"))
