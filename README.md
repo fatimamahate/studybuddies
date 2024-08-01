@@ -7,9 +7,26 @@ You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.hero
 
 # Contents
 * [**Project**](<#project>)
-    * [Site Users Goal](<#site-users-goal>)
-    * [Site Owners Goal](<#site-owners-goal>)
+    * [Users Goal](<#users-goal>)
+    * [Owners Goal](<#owners-goal>)
     * [Agile](<#agile>)
+
+# **Project**
+## Users Goal
+The user is somebody who would like to find out more information about the best ways to study both in regular day to day studying and for exams
+
+## Owners Goal
+The owner would like the community to be able to share tips and tricks to readers of the site to make studying easy
+
+## Project
+### Agile
+A Github board (project) was used for the agile aspect of this project
+
+### Database
+
+
+
+
 
 
 
