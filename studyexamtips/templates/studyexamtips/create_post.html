@@ -40,8 +40,11 @@
     <form id="postForm" enctype="multipart/form-data" method="post" style="margin-top: 1.3em;">
         {{ form | crispy }}
         {% csrf_token %}
-        <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit Post</button>
-    </form>
+        <div class = 'mb-4'>
+            <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit Post</button>
+        </form>
+    </div>
+        
     {% else %}
     <p class="access-denied card-text bg-danger">You are not allowed here!</p>
     {% endif %}

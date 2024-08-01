@@ -183,15 +183,6 @@ def post_deleted(request):
     return render(request, 'studyexamtips/post_deleted.html')
 
 
-# start here
-def like_post(self, request, slug):
 
-    post = get_object_or_404(Post, slug=slug)
-    if post.likes.filter(id=request.user.id).exists():
-        post.likes.remove(request.user)
-    else:
-        post.likes.add(request.user)
-    
-    return HttpResponseRedirect(reverse('studyexamtips/post_detail.html', args=[slug]))
 
 
