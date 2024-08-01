@@ -193,18 +193,8 @@ def search_post(request):
 
     return render(request, 'studyexamtips/post_search.html')
 
-# def search_post(request):
-#     if request.method == 'POST':
-#         # Retrieve the search query entered by the user
-#         search_query = request.POST['search_query']
-#         # Filter your model by the search query
-#         posts = Post.objects.filter(title__contains=search_query)
-#         return render(request, 'studyexamtips/post_search.html', {'query':search_query, 'posts':posts})
-#     else:
-#         return render(request, 'studyexamtips/post_search.html',{})
 
-# def my_404(request, exception):
-#     context = {}
-#     return render(request, 'studyexamtips/404.html',context)
+def my_404(request, exception):
+    return render(request, 'studyexamtips/404.html')
 
 

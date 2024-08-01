@@ -17,14 +17,12 @@ Including another URLconf
 from django.conf.urls import handler404
 from django.contrib import admin
 from django.urls import path, include
-# from studyexamtips import views
 
 
 
 urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
-    # path('blog/', views.sb_blog, name = 'sb_blog'),
     path('summernote/', include('django_summernote.urls')),
     path("", include("studyexamtips.urls"), name="sb-urls"),
 ]
