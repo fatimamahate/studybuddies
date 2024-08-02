@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* css page for all styles and google font import ^ */
+
 body {
     background-color: white;
 }  
@@ -49,6 +49,7 @@ h2 {
     background-color:rgb(196, 215, 228);
 }
 
+
 .card-title{
     text-align: center;
     color:#4A4A4F
@@ -63,6 +64,15 @@ h2 {
 .image-container {
     position: relative;
 }
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+}
+
+
 
 .scale {
     width: 100%;
@@ -96,7 +106,6 @@ h2 {
     overflow: hidden;
 }
 
-
 .post-link,
 .page-link {
     text-align: center;
@@ -122,19 +131,23 @@ h2 {
     color: black;
 }
 
+
 .btn-signup,
 .btn-edit {
-    background-color: rgb(196, 215, 228);
+    background-color: #188181;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: rgb(196, 215, 228);
+    color: #23BBBB;
 }
 
-
+.btn-delete {
+    color: #fff;
+    background: #E84610;
+}
 
 .faded {
     color: rgb(172, 175, 175);

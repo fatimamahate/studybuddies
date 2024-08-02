@@ -49,11 +49,8 @@ The User Stories can be split into two perspectives.
 1. Site User 
 2. Site Admin
 
-The following User Stories were used:
-1. Site User Stories
-  -
-2. Site Admin Stories
-  -
+To view the User Stories for this project, you can visit my GitHub board [here.](https://github.com/users/fatimamahate/projects/15)
+
 # **Features**
 ## Header
 The header of the page includes the name of the site which is Study Buddies. The sites name is linked to the homepage so that when users would like to go back, they simply need to click on the site name. Furthermore, the colour chosen is #4A4A4F which is dark grey. This is because it is softer than the harsh black against the background which is rgb(196, 215, 228).
@@ -68,32 +65,74 @@ The navigation (nav bar) has the following pages.
 6. Sign Up
 7. Sign In
 
-If the User is logged in, then in addtion to the pages 1-5 from above, we have the following pages.
+![Header](readme_images/header.JPG)
+
+If the User is logged in, then in addition to the pages 1-5 from above, we have the following pages.
 1. My Posts
 2. Create
 3. Sign Out
 
+![Nav Bar](readme_images/nav_bar.JPG)
+
 ## Pages
 Each navigation takes you to the following pages:
-1. Home
-2. Study Tips
-3. Exam Tips
-4. Who We Are
-5. Search
-6. Sign Up
-7. Sign In
-8. My Posts
-9. Create
-10. Sign Out
+1. Home - this page shows all posts regardless of category and is paginated.
+
+![Home](readme_images/home.JPG)
+
+2. Study Tips - page shows all posts of the study tip category and is paginated
+
+![Study](readme_images/study.JPG)
+
+3. Exam Tips - page shows all posts of the exam tip category and is paginated
+
+![Exam](readme_images/exam.JPG)
+
+4. Who We Are - page gives a small about section along with when the last post was created
+
+![Who](readme_images/who.JPG)
+
+5. Search - user can search for posts and retrieve a list
+
+![Search](readme_images/search.JPG)
+
+6. Sign Up - a new user can create an account
+
+![Sign Up Page](readme_images/sign_up.JPG)
+
+7. Sign In -  a returning user can log in
+
+![Sign Out](readme_images/sign_in.JPG)
+
+8. My Posts - user can view all published and draft posts
+
+![Draft Posts](readme_images/draft_my_posts.JPG)
+![Pulished Posts](readme_images/published_my_posts.JPG)
+
+9. Create - given a logged in user, they are able to fill in the form to add a post. 
+
+![Create 1](readme_images/create_1.JPG)
+![Create 2](readme_images/create_2.JPG)
+
+10. Sign Out - when clicking on sign out, user will be asked to confirm they would like to sign out
+
+![Sign Out](readme_images/sign_out_page.JPG)
+
 
 ## Footer 
 The footer has the icons which take you to the relevant social media pages. 
+
+![footer](readme_images/footer.JPG)
+
+## Comments
+The comments can be written, edited and deleted on each page given a logged in user. 
 
 ## More Features
 Further to the features above, there are some features which would be beneficial to implement. These are listed below:
 
 1. Search bar in nav bar instead of in a new page
   - Search to also reveal a cards of pages instead of a list of pages.
+  - Whilst a search in or near the nav bar would be better in this instance, a seperate page would allow for added filters and queries to refine searches which is another feature yet to be implemented.
 2. Automated Testing
 3. Approval for edited post
   - Currently, as the admin has rights of approving they have already seen and trusted the user, therefore are trusted to edit their page correctly. It would be better and more efficient if the post will be sent for approval.
@@ -110,7 +149,7 @@ The following technologies - including programming languages, frameworks and sit
 - Microsoft Paint
 - Cloudinary
 - HTML Validator https://validator.w3.org/
-- 
+- CSS Validator
 
 exam - https://unsplash.com/photos/mathematics-computation-05A-kdOH6Hw
 uncat - https://unsplash.com/photos/woman-holding-red-phone-m7zKB91brGo
