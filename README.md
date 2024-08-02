@@ -107,11 +107,11 @@ Each navigation takes you to the following pages:
 
 ![Search](readme_images/search.JPG)
 
-6. Sign Up - a new user can create an account. Then when they are logged in, there is a constant message to say hello, username. This shows they are logged in. As can be seen in the header/navigation image above, there is a message to say hello, you are not logged in. This is to show that the site user is not logged in.
+6. Sign Up - a new user can create an account. Then when they are logged in, there is a constant message to say 'hello, username'. This shows they are logged in. As can be seen in the header/navigation image above, there is a message to say 'hello, you are not logged in'. This is to show that the site user is not logged in. Furthermore, it is on the right hand side as opposed to centre when they logged in, to emphasise the fact that they are not logged in. 
 
 ![Sign Up Page](readme_images/sign_up.JPG)
 
-7. Sign In -  a returning user can log in. Onc logged in the user can see a message to say it is successful. When they are logged in, there is a constant message to say welcome, username. This shows they are logged in.
+7. Sign In -  a returning user can log in. Onc logged in the user can see a message to say it is successful. When they are logged in, there is a constant message to say 'hello, username'. This shows they are logged in.
 
 ![Sign In](readme_images/sign_in.JPG)
 ![Signed In](readme_images/signed_in.JPG)
@@ -121,12 +121,12 @@ Each navigation takes you to the following pages:
 ![Draft Posts](readme_images/draft_my_posts.JPG)
 ![Published Posts](readme_images/published_my_posts.JPG)
 
-9. Create - given a logged in user, they are able to fill in the form to add a post. 
+9. Create - given a logged in user, they are able to fill in the form to add a post. The titles must be unique. 
 
 ![Create 1](readme_images/create_1.JPG)
 ![Create 2](readme_images/create_2.JPG)
 
-10. Sign Out - when clicking on sign out, user will be asked to confirm they would like to sign out.
+10. Sign Out - when clicking on sign out, user will be asked to confirm they would like to sign out. Once they do, they get a message to say they have successfully signed out. The user will be able to see 'hello, you are not logged in' on the right hand side. This shows they are logged out. 
 
 ![Sign Out](readme_images/sign_out_page.JPG)
 ![Sign Out Message](readme_images/signed_out.JPG)
@@ -149,7 +149,7 @@ The footer has the icons which take you to the relevant social media pages.
 ## Comments
 The comments can be written, edited and deleted on each page given a logged in user. Furthermore, a comment count looks at how many comments there are with the blog post. 
 When editing the comment, the date and author is written in the box. Should the user wish, they can keep a log of when the edits were made. 
-A message appears and is delierately different to what the editing, deleting or submitting the post- to differentiate a comment from the post. 
+A message appears and is deliberately different to what the editing, deleting or submitting the post- to differentiate a comment from the post. 
 
 ![Posted comment](readme_images/comment_posted.JPG)
 ![Delete comment](readme_images/comment_delete.JPG)
@@ -169,7 +169,7 @@ Further to the features above, there are some features which would be beneficial
 2. Automated Testing
 3. Approval for edited posts
   - Currently, as the admin has rights of approving they have already seen and trusted the user, therefore are trusted to edit their page correctly. It would be better and more efficient if the post will be sent for approval.
-4. Currently, the email is optional. However, in the future it would be good to make it compulsory so that the email can be used for sending out newsletters regarding Study Buddies.
+4. Currently, the email is optional. However, in the future it would be good to make it compulsory so that the email can be used for sending out newsletters regarding Study Buddies. Sending newsletters is feature which can be implemented in the future.
 
 # **Technologies Used** 
 The following technologies were used:
@@ -232,7 +232,7 @@ Heroku was used to deploy the live project. The following steps were used to set
 # **Credit**
 Images were all take from [Unsplash](https://unsplash.com/) and they were free to use. 
 
-There were two default images although one was only used once for the who we are page. 
+There were two default images although one was only used once for the 'who we are' page. 
 
 - Who We Are Page - Photo by: [Priscilla Du Preez](https://unsplash.com/photos/three-men-laughing-while-looking-in-the-laptop-inside-room-XkKCui44iM0)
 
