@@ -111,7 +111,7 @@ Each navigation takes you to the following pages:
 
 ![Sign Up Page](readme_images/sign_up.JPG)
 
-7. Sign In -  a returning user can log in. Onc logged in the user can see a message to say it is successful
+7. Sign In -  a returning user can log in. Onc logged in the user can see a message to say it is successful.
 
 ![Sign In](readme_images/sign_in.JPG)
 ![Signed In](readme_images/signed_in.JPG)
@@ -126,16 +126,20 @@ Each navigation takes you to the following pages:
 ![Create 1](readme_images/create_1.JPG)
 ![Create 2](readme_images/create_2.JPG)
 
-10. Sign Out - when clicking on sign out, user will be asked to confirm they would like to sign out
+10. Sign Out - when clicking on sign out, user will be asked to confirm they would like to sign out.
 
 ![Sign Out](readme_images/sign_out_page.JPG)
 ![Sign Out Message](readme_images/signed_out.JPG)
 
-11. 404 Error - when a user enters the incorrect url, they will get this page
+11. 404 Error - when a user enters the incorrect url, they will get this custome error page. 
 
 ![Error](readme_images/404_page.JPG)
 
-12. Post submitted, deleted and updated pages - a message is seen depending on what function has occurred. 
+12. Post submitted, deleted and updated pages - a message is seen depending on what function has occurred. These are important since a post is the main part of the website. Therefore, they are rendered in a different page. 
+![Post Submitted](readme_images/post_submitted.JPG)
+![Post Updated](readme_images/post_updated.JPG)
+![Post Delete Message](readme_images/post_delete_message.JPG)
+![Post Deleted](readme_images/post_deleted.JPG)
 
 ## Footer 
 The footer has the icons which take you to the relevant social media pages. 
@@ -156,11 +160,12 @@ When editing the comment, the date and author is written in the box. Should the 
 Further to the features above, there are some features which would be beneficial to implement. These are listed below:
 
 1. Search bar in nav bar instead of in a new page
-  - Search to also reveal a cards of pages instead of a list of pages.
+  - Search to also reveal a cards of blog posts instead of a list of pages however this was decided against. This is because if there are many posts that fit the query, it would be easier for the user to scan through the list to find the post they are looking for instead of going through each page. 
   - Whilst a search in or near the nav bar would be better in this instance, a seperate page would allow for added filters and queries to refine searches which is another feature yet to be implemented.
 2. Automated Testing
-3. Approval for edited post
+3. Approval for edited posts
   - Currently, as the admin has rights of approving they have already seen and trusted the user, therefore are trusted to edit their page correctly. It would be better and more efficient if the post will be sent for approval.
+4. Currently, the email is optional. However, in the future it would be good to make it compulsory so that the email can be used for sending out newsletters regarding Study Buddies.
 
 # **Technologies Used** 
 The following technologies were used:
