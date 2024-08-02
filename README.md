@@ -1,7 +1,7 @@
 # Study Buddies 
 Welcome to the Study Buddies Project. 
 
-Study Buddies is a website dedicated to sharing study and exam tips to all who need it. Exam season can be stressful and knowing where to begin studying can be intimidating, therefore this site lets people (who've been through it all) to share any tips and tricks they want to. A source of inspiration for this site was Wikipedia. On Wikipedia people can share anything they'd like (as long as it follows the rules) regarding any topic. Whilst Wikipedia encompasses all topics related to absolutely anything in the world, Study Buddies focus on specifically studying, whether it's studying just for revision or studying for the all dreaded exam. Similar to Wikipedia, logged in users can share their own posts which ensures we have the latest tips and tricks and we can be sure they work! Even more importantly, it's crucial to be aware that everybody has different ways of working and studying. Because Study Buddies consists of posts written by users, we can be sure there is a plethora of information suitable for every need. 
+Study Buddies is a website dedicated to sharing study and exam tips to all who need it. Exam season can be stressful and knowing where to begin studying can be intimidating, therefore this site lets people (who've been through it all) to share any tips and tricks they want to. A source of inspiration for this site was Wikipedia. On Wikipedia people can share anything they'd like (as long as it follows the rules) regarding any topic. Whilst Wikipedia encompasses all topics related to absolutely anything in the world, Study Buddies focus on specifically studying, whether it's studying just for revision or studying for the all dreaded exam. Similar to Wikipedia, logged in users can share their own posts which ensures we have the latest tips and tricks and we can be sure they work! Even more importantly, it's crucial to be aware that everybody has different ways of working and studying. Because Study Buddies consists of posts written by users, we can be sure there is a plethora of information suitable for every need. The primary focus of the site is to provide advice based on previous experience of users. However, fundamentally StudyBuddies is a site which users can utilise for their journey in education regardless of where they're at. Therefore users also share other posts (not necessarily study tips or exam tips) such as exam-style questions. 
 
 You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.herokuapp.com/)
 
@@ -31,10 +31,10 @@ You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.hero
 
 # **Project**
 ## Users Goal
-The user is somebody who would like to find out more information about the best ways to study both in regular day to day studying and for exams
+The user is somebody who would like to find out more information about the best ways to study both in regular day to day studying and for exams. It can be used as a study tool also if a user decides to share subject related quizzes or questions. 
 
 ## Owners Goal
-The owner would like the community to be able to share tips and tricks to readers of the site to make studying easy
+The owner would like the community to be able to share tips and tricks to readers of the site to make studying and exams easy. Furthermore, StudyBuddies can be used as a tool for users to study as users can share questions for other user's benefit. 
 
 ### Agile
 A Github board (project) was used for the agile aspect of this project to manage my user stories. 
@@ -50,7 +50,7 @@ The following Entity Relationship Diagrams (ERD) using Microsoft Word Online wer
 
 # **User Experience**
 ## Wireframes
-The following wireframes were created to design the layout of the pages. It was created using Microsoft Paint.
+The following wireframes were created to design the layout of the pages and was created using Microsoft Paint.
 ![Posts](readme_images/1_posts_pages.png)
 ![About/Who We Are](readme_images/2_about_page.png)
 ![Create Post Form](readme_images/3_create_form.png)
@@ -64,7 +64,7 @@ To view the User Stories for this project, you can visit my GitHub board [here.]
 
 # **Features**
 ## Header
-The header of the page includes the name of the site which is Study Buddies. The sites name is linked to the homepage so that when users would like to go back, they simply need to click on the site name. Furthermore, the colour chosen is #4A4A4F which is dark grey. This is because it is softer than the harsh black against the background which is rgb(196, 215, 228). See image in Navigation section.
+The header of the page includes the name of the site which is Study Buddies. The sites name is linked to the homepage so that when users would like to go back, they simply need to click on the site name. Furthermore, the colour chosen is #4A4A4F which is dark grey. This is because it is softer than the harsh black against the background which is rgb(196, 215, 228). See image in Navigation section for the Header also. 
 
 ## Navigation
 The navigation (nav bar) has the following pages. 
@@ -87,36 +87,36 @@ If the User is logged in, then in addition to the pages 1-5 from above, we have 
 
 ## Pages
 Each navigation takes you to the following pages:
-1. Home - this page shows all posts regardless of category and is paginated.
+1. Home - this page shows all posts regardless of category and is paginated. This page contains all posts even if they are not of either category. For example, a user may choose to post a worksheet they made. Whilst it is studying, it is not a study tip. 
 
 ![Home](readme_images/home.JPG)
 
-2. Study Tips - page shows all posts of the study tip category and is paginated
+2. Study Tips - page shows all posts of the study tip category and is paginated. This page can have regular study tips.
 
 ![Study](readme_images/study.JPG)
 
-3. Exam Tips - page shows all posts of the exam tip category and is paginated
+3. Exam Tips - page shows all posts of the exam tip category and is paginated. Since exams are most likely why the user is studying, this will allow them to find all information in one page.
 
 ![Exam](readme_images/exam.JPG)
 
-4. Who We Are - page gives a small about section along with when the last post was created
+4. Who We Are - page gives a small about section along with when the last post was created to show how their can always be new ideas or tips.
 
 ![Who](readme_images/who.JPG)
 
-5. Search - user can search for posts and retrieve a list
+5. Search - user can search for posts and retrieve a list of all posts that contain the query. It is not case sensitive.
 
 ![Search](readme_images/search.JPG)
 
-6. Sign Up - a new user can create an account
+6. Sign Up - a new user can create an account. Then when they are logged in, there is a constant message to say hello, username. This shows they are logged in. As can be seen in the header/navigation image above, there is a message to say hello, you are not logged in. This is to show that the site user is not logged in.
 
 ![Sign Up Page](readme_images/sign_up.JPG)
 
-7. Sign In -  a returning user can log in. Onc logged in the user can see a message to say it is successful.
+7. Sign In -  a returning user can log in. Onc logged in the user can see a message to say it is successful. When they are logged in, there is a constant message to say welcome, username. This shows they are logged in.
 
 ![Sign In](readme_images/sign_in.JPG)
 ![Signed In](readme_images/signed_in.JPG)
 
-8. My Posts - user can view all published and draft posts
+8. My Posts - user can view all published and draft posts. Published posts have a button which allow users to view their post. Draft Posts have 2 buttons - one to continue to edit the post and one to delete the post. 
 
 ![Draft Posts](readme_images/draft_my_posts.JPG)
 ![Pulished Posts](readme_images/published_my_posts.JPG)
