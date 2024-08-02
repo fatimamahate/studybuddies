@@ -23,6 +23,7 @@
                 {% csrf_token %}
                 <div class="post-btn text-center">
                   <a href=" {% url 'edit' post.slug %}" class="btn btn-info" >Update</a>
+                  <hr>
                   <a href=" {% url 'delete' post.slug %}" class="btn btn-danger" >Delete</a>
                 </div>
                 {% endif %}

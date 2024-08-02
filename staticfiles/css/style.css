@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* css page for all styles and google font import ^ */
 body {
     background-color: white;
 }  
@@ -40,21 +40,6 @@ h2 {
     color: #4A4A4F;
     text-decoration: none;
 }
-/* .thin {
-    font-weight: 300;
-} */
-
-/* .light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
-} */
 
 .row{
     margin: 0 auto;
@@ -63,18 +48,11 @@ h2 {
     border: none;
     background-color:rgb(196, 215, 228);
 }
-/* .card:hover{
-    background-color: white;
-} */
-
 
 .card-title{
     text-align: center;
     color:#4A4A4F
 }
-/* .card-title:hover{
-    color:black;
-} */
 
 .card-text,
 .author{
@@ -85,16 +63,6 @@ h2 {
 .image-container {
     position: relative;
 }
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    /* background-color: ; */
-}
-
-
 
 .scale {
     width: 100%;
@@ -123,25 +91,11 @@ h2 {
 }
 
 
-
 .masthead-image {
     position: relative;
     overflow: hidden;
 }
 
-.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}
 
 .post-link,
 .page-link {
@@ -168,47 +122,19 @@ h2 {
     color: black;
 }
 
-
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: rgb(196, 215, 228);
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: rgb(196, 215, 228);
 }
 
-.link {
-    color: black;
-    text-decoration: none;
-}
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-delete {
-    color: #fff;
-    background: #E84610;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
 
 .faded {
     color: rgb(172, 175, 175);
