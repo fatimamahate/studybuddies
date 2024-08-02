@@ -20,6 +20,10 @@ You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.hero
     * [Footer](<#footer>)
     * [More Features](<#more_features>)
 * [**Technologies Used**](<#technologies_used>)
+* [**Deployment**](<#deployment>)
+* [**Credits**](<#credits>)
+* [**Code**](<#code>)
+* [**Acknowledgements**](<#acknowledgements>)
 
 
 # **Project**
@@ -29,7 +33,6 @@ The user is somebody who would like to find out more information about the best 
 ## Owners Goal
 The owner would like the community to be able to share tips and tricks to readers of the site to make studying easy
 
-## Project
 ### Agile
 A Github board (project) was used for the agile aspect of this project to manage my user stories. 
 
@@ -38,7 +41,7 @@ The models created for this project are called:
 1. Post - which is the database related to the each blog post. 
 2. Comment - which is the database related to the comments on each blog post. 
 
-The following Entity Relationship Diagrams (END) were created for this project. 
+The following Entity Relationship Diagrams (ERD) were created for this project. 
 
 # **User Experience**
 ## Wireframes
@@ -118,6 +121,9 @@ Each navigation takes you to the following pages:
 
 ![Sign Out](readme_images/sign_out_page.JPG)
 
+11. 404 Error - when a user enters the incorrect url, they will get this page
+
+![Error](readme_images/404_page.JPG)
 
 ## Footer 
 The footer has the icons which take you to the relevant social media pages. 
@@ -125,7 +131,14 @@ The footer has the icons which take you to the relevant social media pages.
 ![footer](readme_images/footer.JPG)
 
 ## Comments
-The comments can be written, edited and deleted on each page given a logged in user. 
+The comments can be written, edited and deleted on each page given a logged in user. Furthermore, a comment count looks at how many comments there are with the blog post. 
+When editing the comment, the date and author is written in the box. Should the user wish, they can keep a log of when the edits were made. 
+
+![Posted comment](readme_images/comment_posted.JPG)
+![Delete comment](readme_images/comment_delete.JPG)
+![Edit comment](readme_images/comment_update.JPG)
+![Approved comment](readme_images/comment_count_and_approved_comment.JPG)
+
 
 ## More Features
 Further to the features above, there are some features which would be beneficial to implement. These are listed below:
