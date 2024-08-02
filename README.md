@@ -18,9 +18,11 @@ You can view the deployed site [here](https://studybuddies-pp4-87eb5b7c6767.hero
     * [Navigation](<#navigation>)
     * [Pages](<#pages>)
     * [Footer](<#footer>)
+    * [Comments](<#comments>)
     * [More Features](<#more_features>)
 * [**Technologies Used**](<#technologies_used>)
 * [**Tests**](<#tests>)
+  * [Manual Testing](<#manual-testing>)
 * [**Deployment**](<#deployment>)
 * [**Credits**](<#credits>)
 * [**Code**](<#code>)
@@ -161,20 +163,22 @@ Further to the features above, there are some features which would be beneficial
   - Currently, as the admin has rights of approving they have already seen and trusted the user, therefore are trusted to edit their page correctly. It would be better and more efficient if the post will be sent for approval.
 
 # **Technologies Used** 
-The following technologies - including programming languages, frameworks and sites for testing - are as follows:
+The following technologies were used:
 
-- Python
-- HTML
-- CSS
-- JavaScript
-- Django
-- Bootstrap5
-- Microsoft Paint
-- Cloudinary
-- HTML Validator https://validator.w3.org/
-- CSS Validator
+- [Python](https://www.python.org/)
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [JavaScript](https://www.w3schools.com/js/)
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+- [Microsoft Paint](https://www.microsoft.com/en-us/windows/paint?msockid=160fadd2f2ff628f2dfebcd9f31f633f) - for wireframes
+- [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word?msockid=160fadd2f2ff628f2dfebcd9f31f633f) - for ERD
+- [Cloudinary](https://cloudinary.com/) - to store user images
+- [HTML Validator](https://validator.w3.org/) - validate html pages
+- [CSS Validator](https://jigsaw.w3.org/css-validator/) - validate css pages
 
 # **Tests**
+## Manual Testing
 Acceptance criteria of each user story is met for test to pass.
 |  <u>User Stories</u> |<u>Test</u>   |
 |---|---|
@@ -195,6 +199,12 @@ Acceptance criteria of each user story is met for test to pass.
 | As a site user I can comment on posts so that I can be involved in the conversation. | Passed  |
 | As a site user I can search for a post so that I don't have to look through all posts.  | Passed  |
 | As a site admin I can have access to an admin area so that I can view the users and posts and comments  |  Passed |
+
+## Validation
+1. HTML Testing - this recieved no errors and therefore passed testing.
+![HTML Validation](readme_images/HTML_validation.JPG)
+2. CSS Testing - this recieved no errors and therefore passed testing.
+![CSS Validation](readme_images/CSS_validation.JPG)
 
 # **Deployment**
 Heroku was used to deploy the live project. The following steps were used to set up Heroku app. 
