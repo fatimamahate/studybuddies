@@ -119,7 +119,7 @@ Each navigation takes you to the following pages:
 8. My Posts - user can view all published and draft posts. Published posts have a button which allow users to view their post. Draft Posts have 2 buttons - one to continue to edit the post and one to delete the post. 
 
 ![Draft Posts](readme_images/draft_my_posts.JPG)
-![Pulished Posts](readme_images/published_my_posts.JPG)
+![Published Posts](readme_images/published_my_posts.JPG)
 
 9. Create - given a logged in user, they are able to fill in the form to add a post. 
 
