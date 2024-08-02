@@ -149,11 +149,15 @@ The footer has the icons which take you to the relevant social media pages.
 ## Comments
 The comments can be written, edited and deleted on each page given a logged in user. Furthermore, a comment count looks at how many comments there are with the blog post. 
 When editing the comment, the date and author is written in the box. Should the user wish, they can keep a log of when the edits were made. 
+A message appears and is delierately different to what the editing, deleting or submitting the post- to differentiate a comment from the post. 
 
 ![Posted comment](readme_images/comment_posted.JPG)
 ![Delete comment](readme_images/comment_delete.JPG)
 ![Edit comment](readme_images/comment_update.JPG)
 ![Approved comment](readme_images/comment_count_and_approved_comment.JPG)
+![Submitted comment message](readme_images/comment_submitted.JPG)
+![Updated comment message](readme_images/comment_updated.JPG)
+![Deleted comment message](readme_images/comment_deleted.JPG)
 
 
 ## More Features
